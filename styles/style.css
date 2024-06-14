@@ -102,7 +102,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 26px;
+  gap: 22px;
 }
 
 .result {
@@ -232,7 +232,6 @@ fieldset {
   width: fit-content;
   cursor: pointer;
   gap: 5px;
-  padding: 1px;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
@@ -242,6 +241,7 @@ fieldset {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__textfield {
@@ -293,8 +293,7 @@ fieldset {
 }
 
 .more-button {
+  box-sizing: border-box;
   height: 34px;
   width: 100%;
-  margin: 2px;
-  padding: 2px;
 }
